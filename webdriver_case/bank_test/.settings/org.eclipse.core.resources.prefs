@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+encoding//bank_omscase/login_oms.py=UTF-8
+encoding//bank_omscase/test_jinjian.py=utf-8
+encoding//bank_omscase/test_login_oms.py=utf-8
+encoding//bank_websitecase/test_bank_link.py=UTF-8
+encoding//conf/bankconf.py=UTF-8
+encoding//conf/link_bank.py=utf8
+encoding//conf/verify_code.py=utf8
+encoding//page_element/bank_page.py=UTF-8
+encoding//page_element/jiaoyiguanli.py=UTF-8
+encoding//page_element/mainmenu.py=UTF-8
+encoding/bank_websitecase=UTF-8

@@ -1,0 +1,15 @@
+eclipse.preferences.version=1
+encoding//bank_omscase/un.py=utf8
+encoding//bank_part1/MyParser.py=utf-8
+encoding//bank_part1/myaccount_availability/test_my_availability.py=utf-8
+encoding//bank_part1/myaccount_availability/test_myinvestment_availability.py=utf-8
+encoding//bank_part1/myaccount_availability/test_mypay_availability.py=utf-8
+encoding//bank_part1/run_part1.py=utf-8
+encoding//bank_part1/test_all.py=utf-8
+encoding//bank_part1/test_bidlist_availability.py=utf-8
+encoding//bank_part1/test_help_availability.py=utf-8
+encoding//bank_part1/test_index_availability.py=utf-8
+encoding//bank_part1/test_my.py=utf8
+encoding//bank_part1/test_passport_availability.py=utf-8
+encoding//bank_part2/test_my.py=utf8
+encoding/<project>=UTF-8

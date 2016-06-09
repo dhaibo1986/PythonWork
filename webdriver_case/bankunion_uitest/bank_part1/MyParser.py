@@ -1,0 +1,48 @@
+#encoding=utf-8
+'''
+Created on 2016年5月21日
+
+@author: Administrator
+'''
+
+import HTMLParser
+#from conf import bankconf
+
+class MyParser(HTMLParser.HTMLParser):  
+    def __init__(self):  
+        HTMLParser.HTMLParser.__init__(self) 
+        self.links = set([])
+        self.css = set([])
+        self.img = set([])
+        self.js = set([])
+                         
+    def handle_starttag(self, tag, attrs):  
+        # 这里重新定义了处理开始标签的函数  
+        if tag == 'a':  
+            # 判断标签<a>的属性  
+            for name,value in attrs:  
+                if name == 'href'  :  
+                    if value.find('syslogout') <= 0:
+                        if value.startswith('http'):
+                            self.links.add(value)
+                        elif value.startswith('/'):
+                            self.links.add('http://rej.jzbank.com'+value)
+        elif tag == 'link' :
+            for name,value in attrs:  
+                if name == 'href'  :  
+                    self.css.add(value) 
+        elif tag == 'img':
+            for name,value in attrs:
+                if name == 'src'   :
+                    if value.startswith('http'):
+                        self.img.add(value)
+                    elif value.startswith('/'):
+                        self.img.add('http://rej.jzbank.com'+value)
+        elif tag == 'script':
+            for name,value in attrs:
+                if name == 'src':
+                    self.js.add(value)                    
+
+
+
+

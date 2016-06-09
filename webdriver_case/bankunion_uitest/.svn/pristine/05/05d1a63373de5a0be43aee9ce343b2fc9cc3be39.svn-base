@@ -1,0 +1,1 @@
+sed -i "s#^.*self.driver=webdriver.*$#        self.driver=webdriver.Remote("http://172.19.2.136:3344/wd/hub",webdriver.DesiredCapabilities.FIREFOX)" `grep "self.driver=webdriver" -rl /home/webdriver_case/bank_test2/`
